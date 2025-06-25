@@ -1,5 +1,5 @@
 import React from 'react';
-import agentPhoto from '../assets/agent.jpg'; // Replace with actual path
+import agentPhoto from '../assets/agent.jpg';
 import groupPhoto from '../assets/group.jpg';
 import awardPhoto from '../assets/award.jpg';
 
@@ -101,21 +101,3 @@ function About() {
 }
 
 export default About;
-
-// function About() {
-//     return (
-//       <div className="p-8">
-//         <h2 className="text-3xl font-semibold mb-4">About Jane Doe</h2>
-//         <p>
-//         Monitta combines 20 years in financial services and business <br/>
-//         ownership with 20 years as an educator and community advocate. 
-//         She provides education, tools, and options for increasing financial literacy and leaving a family legacy to nonprofit agencies, 
-//         higher education, and community organizations via onsite training, online webinars, and an on-demand e-learning center.
-//         Monitta's approach is grounded in Proverbs 31:30-31, emphasizing the value of character and integrity over superficial attributes. 
-//         She believes in the importance of leaving a positive legacy through one's actions and endeavors.
-//         </p>
-//       </div>
-//     );
-//   }
-  
-//   export default About;

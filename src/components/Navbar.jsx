@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="bg-earth-medium text-earth-dark shadow-md">
       <div className="container mx-auto flex justify-between items-center p-4">
-        <h1 className="text-2xl font-bold">Royal Legacy</h1>
+        <h1 className="text-2xl font-bold">Monitta Williams</h1>
 
         <button
           className="md:hidden text-earth-clay focus:outline-none"
