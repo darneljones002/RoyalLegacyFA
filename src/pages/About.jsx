@@ -29,15 +29,22 @@ function About() {
             Meet the Agent
           </h3>
           <p className="text-lg leading-relaxed">
-            Monitta combines 20 years in financial services and business ownership with 20 years as
-            an educator and community advocate. She provides education, tools, and options for
-            increasing financial literacy and leaving a family legacy to nonprofit agencies, higher
-            education, and community organizations via onsite training, online webinars, and an
-            on-demand e-learning center.
+              Dr. Monitta Williams is a seasoned financial professional, licensed in 13 states, with a passion for empowering individuals, 
+              families, and small businesses to build lasting legacies. She is the founder of Royal Legacy Financial Advisors, where she 
+              specializes in financial literacy, wealth building, and legacy planning. With a heart for service and a commitment to excellence, 
+              Dr. Williams combines her professional expertise with a personal mission to help clients achieve financial independence and long-term security. 
           </p>
           <p className="mt-4 text-lg italic text-[#966639] font-medium">
-            “Mo Life provides more money, more time, and more security.”
+            “Financial professional licensed in 13 states, founder of Royal Legacy Financial Advisors, 
+            helping families and businesses build lasting financial legacies.”
           </p>
+          <br/>
+          <p className="text-lg leading-relaxed">
+              Her approach is rooted in integrity, stewardship, and faith, offering guidance that aligns with both financial goals and core values. Beyond her professional work, 
+              Dr. Williams is a sought-after speaker and educator who regularly provides financial literacy training to communities and churches. Her vision is clear: to inspire generational 
+              change by equipping others with the tools and knowledge needed to take control of their financial future and leave a meaningful legacy.
+          </p>
+          
           <p className="mt-4 text-md">
             Her approach is grounded in Proverbs 31:30-31, emphasizing the value of character and
             integrity over superficial attributes. She believes in the importance of leaving a
