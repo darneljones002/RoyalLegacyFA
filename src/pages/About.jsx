@@ -1,14 +1,114 @@
+import React from 'react';
+import agentPhoto from '../assets/agent.jpg'; // Replace with actual path
+import groupPhoto from '../assets/group.jpg';
+import awardPhoto from '../assets/award.jpg';
+
 function About() {
-    return (
-      <div className="p-8">
-        <h2 className="text-3xl font-semibold mb-4">About Jane Doe</h2>
-        <p>
-          Jane Doe is a faith-driven financial advisor committed to helping small businesses and individuals
-          establish long-term financial legacies. Her approach is rooted in trust, stewardship, and holistic planning.
+  return (
+    <div className="bg-[#e5e2d6] text-[#000000] font-sans">
+      {/* Header */}
+      <section className="py-10 px-6 text-center bg-[#f1d782]">
+        <img
+          src={agentPhoto}
+          alt="Monitta speaking"
+          className="w-40 h-40 rounded-full object-cover mx-auto border-4 border-[#c5a468] shadow-md"
+        />
+        <h2 className="text-3xl sm:text-4xl font-bold mt-4 text-[#000000]">Monitta Williams</h2>
+        <p className="text-lg sm:text-xl mt-2 text-[#966639]">
+          Multi-Award Winning Financial Professional & Educator
         </p>
-      </div>
-    );
-  }
+        <blockquote className="mt-6 italic text-[#000000] max-w-3xl mx-auto">
+          “Helping working professionals & new families focus on creating a financially secure foundation.”
+        </blockquote>
+      </section>
+
+      {/* Main Content */}
+      <section className="grid md:grid-cols-2 gap-8 px-6 py-12 max-w-6xl mx-auto items-start">
+        <div>
+          <h3 className="text-2xl font-bold text-[#966639] mb-4 border-l-4 border-[#c5a468] pl-4">
+            Meet the Agent
+          </h3>
+          <p className="text-lg leading-relaxed">
+            Monitta combines 20 years in financial services and business ownership with 20 years as
+            an educator and community advocate. She provides education, tools, and options for
+            increasing financial literacy and leaving a family legacy to nonprofit agencies, higher
+            education, and community organizations via onsite training, online webinars, and an
+            on-demand e-learning center.
+          </p>
+          <p className="mt-4 text-lg italic text-[#966639] font-medium">
+            “Mo Life provides more money, more time, and more security.”
+          </p>
+          <p className="mt-4 text-md">
+            Her approach is grounded in Proverbs 31:30-31, emphasizing the value of character and
+            integrity over superficial attributes. She believes in the importance of leaving a
+            positive legacy through one's actions and endeavors.
+          </p>
+        </div>
+
+        {/* Photos */}
+        <div className="grid grid-cols-1 gap-4">
+          <img src={groupPhoto} alt="Community event" className="rounded-lg shadow-lg" />
+          <img src={awardPhoto} alt="Award ceremony" className="rounded-lg shadow-lg" />
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="bg-[#966639] text-[#e5e2d6] py-10 px-6">
+        <div className="max-w-5xl mx-auto grid sm:grid-cols-2 gap-8">
+          <div>
+            <h4 className="text-2xl font-bold mb-4">Life / Health Coverage Options</h4>
+            <ul className="list-disc pl-5 text-lg space-y-2">
+              <li>Final Expense</li>
+              <li>SAFE Investments</li>
+              <li>Lifestyle Protection</li>
+              <li>College Tuition Preparation</li>
+              <li>Retirement Income Guarantee</li>
+            </ul>
+          </div>
+
+          {/* Testimonial Box */}
+          <div className="bg-[#f1d782] text-[#000000] p-6 rounded-lg shadow-md">
+            <h5 className="text-xl font-bold mb-3">Testimonial</h5>
+            <p className="italic text-sm sm:text-base">
+              “I’ve known Monitta for several years, and I know she is trustworthy, professional, and
+              a helper by nature. She is knowledgeable in financial services and insurance coverage.
+              She is patient when explaining and giving guidance on what would possibly be best for
+              my family’s needs.”
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="bg-[#c5a468] text-[#000000] text-center py-10">
+        <p className="text-xl font-semibold">Click below to schedule a consultation:</p>
+        <a
+          href="mailto:molifeinsures@gmail.com"
+          className="mt-4 inline-block bg-[#000000] text-[#f1d782] px-6 py-3 rounded-lg text-lg font-bold shadow-md hover:bg-[#966639] transition"
+        >
+          molifeinsures@gmail.com
+        </a>
+      </section>
+    </div>
+  );
+}
+
+export default About;
+
+// function About() {
+//     return (
+//       <div className="p-8">
+//         <h2 className="text-3xl font-semibold mb-4">About Jane Doe</h2>
+//         <p>
+//         Monitta combines 20 years in financial services and business <br/>
+//         ownership with 20 years as an educator and community advocate. 
+//         She provides education, tools, and options for increasing financial literacy and leaving a family legacy to nonprofit agencies, 
+//         higher education, and community organizations via onsite training, online webinars, and an on-demand e-learning center.
+//         Monitta's approach is grounded in Proverbs 31:30-31, emphasizing the value of character and integrity over superficial attributes. 
+//         She believes in the importance of leaving a positive legacy through one's actions and endeavors.
+//         </p>
+//       </div>
+//     );
+//   }
   
-  export default About;
-  
+//   export default About;

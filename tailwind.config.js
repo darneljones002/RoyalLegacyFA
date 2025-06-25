@@ -5,11 +5,11 @@ module.exports = {
     extend: {
       colors: {
         earth: {
-          light: "#E6D9C2",
-          medium: "#A67B5B",
-          dark: "#5C4033",
-          green: "#7C8B3B",
-          clay: "#B08D57",
+          light: "#e5e2d6",
+          medium: "#f1d782",
+          dark: "#966639",
+          green: "#c5a468",
+          clay: "#000000",
         },
       },
     },

@@ -5,12 +5,12 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-earth-medium text-white shadow-md">
+    <nav className="bg-earth-medium text-earth-dark shadow-md">
       <div className="container mx-auto flex justify-between items-center p-4">
         <h1 className="text-2xl font-bold">Royal Legacy</h1>
 
         <button
-          className="md:hidden text-white focus:outline-none"
+          className="md:hidden text-earth-clay focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Menu"
         >
@@ -38,8 +38,8 @@ function Navbar() {
                 to={path}
                 className="relative group transition duration-300"
               >
-                <span className="group-hover:text-yellow-300 transition-colors duration-300">{labels[idx]}</span>
-                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
+                <span className="group-hover:text-earth-clay transition-colors duration-300">{labels[idx]}</span>
+                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-earth-clay transition-all duration-300 group-hover:w-full"></span>
               </Link>
             );
           })}
@@ -47,7 +47,7 @@ function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-earth-clay px-4 py-2 space-y-2">
+        <div className="md:hidden bg-earth-light px-4 py-2 space-y-2">
           {['/', '/about', '/services', '/appointments', '/speaking'].map((path, idx) => {
             const labels = ['Home', 'About Me', 'Services', 'Appointment Scheduling', 'Speaking Engagements'];
             return (
@@ -55,7 +55,7 @@ function Navbar() {
                 key={path}
                 to={path}
                 onClick={() => setIsOpen(false)}
-                className="block transition duration-300 hover:text-yellow-300"
+                className="block transition duration-300 hover:text-earth-clay"
               >
                 {labels[idx]}
               </Link>
