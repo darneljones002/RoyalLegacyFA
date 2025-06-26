@@ -1,6 +1,6 @@
 import ImageCarousel from '../components/ImageCarousel';
-import slide1 from '../assets/slide2-4.jpg';
-import slide2 from '../assets/slide2-2.jpeg';
+import slide1 from '../assets/award.jpg';
+import slide2 from '../assets/agent.jpg';
 import slide3 from '../assets/slide2-3.jpeg';
 import { Link } from 'react-router-dom';
 
@@ -9,13 +9,13 @@ const slides = [
     image: slide1,
     captionTitle: 'Empowering Legacies',
     captionText: 'Guiding families to financial freedom and future wealth.',
-    position: 'object-[center_40%]'
+    position: 'object-[center_120%]'
   },
   {
     image: slide2,
     captionTitle: 'Community First',
     captionText: 'Workshops and resources that impact generations.',
-    position: 'object-[center_40%]'
+    position: 'object-[center_25%]'
   },
   {
     image: slide3,

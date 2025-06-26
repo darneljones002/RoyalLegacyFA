@@ -1,7 +1,7 @@
 import React from 'react';
-import agentPhoto from '../assets/agent.jpg';
-import groupPhoto from '../assets/group.jpg';
-import awardPhoto from '../assets/award.jpg';
+import headshot from '../assets/slide2-4.jpg';
+import headshot1 from '../assets/slide2-1.jpeg';
+// import awardPhoto from '../assets/award.jpg';
 
 function About() {
   return (
@@ -9,7 +9,7 @@ function About() {
       {/* Header */}
       <section className="py-10 px-6 text-center bg-[#f1d782]">
         <img
-          src={agentPhoto}
+          src={headshot}
           alt="Monitta speaking"
           className="w-40 h-40 rounded-full object-cover mx-auto border-4 border-[#c5a468] shadow-md"
         />
@@ -48,8 +48,8 @@ function About() {
 
         {/* Photos */}
         <div className="grid grid-cols-1 gap-4">
-          <img src={awardPhoto} alt="Award ceremony" className="rounded-lg shadow-lg" />
-          <img src={groupPhoto} alt="Community event" className="rounded-lg shadow-lg" />
+          {/* <img src={awardPhoto} alt="Award ceremony" className="rounded-lg shadow-lg" /> */}
+          <img src={headshot1} alt="Community event" className="rounded-lg shadow-lg" />
         </div>
       </section>
 
