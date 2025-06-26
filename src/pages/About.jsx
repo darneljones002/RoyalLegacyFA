@@ -44,45 +44,12 @@ function About() {
               Dr. Williams is a sought-after speaker and educator who regularly provides financial literacy training to communities and churches. Her vision is clear: to inspire generational 
               change by equipping others with the tools and knowledge needed to take control of their financial future and leave a meaningful legacy.
           </p>
-          
-          <p className="mt-4 text-md">
-            Her approach is grounded in Proverbs 31:30-31, emphasizing the value of character and
-            integrity over superficial attributes. She believes in the importance of leaving a
-            positive legacy through one's actions and endeavors.
-          </p>
         </div>
 
         {/* Photos */}
         <div className="grid grid-cols-1 gap-4">
           <img src={groupPhoto} alt="Community event" className="rounded-lg shadow-lg" />
           <img src={awardPhoto} alt="Award ceremony" className="rounded-lg shadow-lg" />
-        </div>
-      </section>
-
-      {/* Services */}
-      <section className="bg-[#966639] text-[#e5e2d6] py-10 px-6">
-        <div className="max-w-5xl mx-auto grid sm:grid-cols-2 gap-8">
-          <div>
-            <h4 className="text-2xl font-bold mb-4">Life / Health Coverage Options</h4>
-            <ul className="list-disc pl-5 text-lg space-y-2">
-              <li>Final Expense</li>
-              <li>SAFE Investments</li>
-              <li>Lifestyle Protection</li>
-              <li>College Tuition Preparation</li>
-              <li>Retirement Income Guarantee</li>
-            </ul>
-          </div>
-
-          {/* Testimonial Box */}
-          <div className="bg-[#f1d782] text-[#000000] p-6 rounded-lg shadow-md">
-            <h5 className="text-xl font-bold mb-3">Testimonial</h5>
-            <p className="italic text-sm sm:text-base">
-              “I’ve known Monitta for several years, and I know she is trustworthy, professional, and
-              a helper by nature. She is knowledgeable in financial services and insurance coverage.
-              She is patient when explaining and giving guidance on what would possibly be best for
-              my family’s needs.”
-            </p>
-          </div>
         </div>
       </section>
 
