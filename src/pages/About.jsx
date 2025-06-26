@@ -48,8 +48,8 @@ function About() {
 
         {/* Photos */}
         <div className="grid grid-cols-1 gap-4">
-          <img src={groupPhoto} alt="Community event" className="rounded-lg shadow-lg" />
           <img src={awardPhoto} alt="Award ceremony" className="rounded-lg shadow-lg" />
+          <img src={groupPhoto} alt="Community event" className="rounded-lg shadow-lg" />
         </div>
       </section>
 
