@@ -34,19 +34,18 @@ function Home() {
       <div className="absolute inset-0 bg-black/50 z-10" />
 
       {/* Text + CTA */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-20 px-6 sm:px-8">
+     <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-20 px-6 sm:px-8 mb-4">
         <h2 className="text-3xl sm:text-5xl font-bold text-earth-green drop-shadow-lg">
           Creating | Building | Shifting Legacy
         </h2>
         <p className="mt-4 text-lg sm:text-2xl text-earth-light drop-shadow">
-          With Dr. Monitta Williams, Lead Advisor at Royal Legacy Financial Advisors
+          With Royal Legacy Financial Advisors
         </p>
-        <Link
-          to="/appointments"
-          className="mt-6 inline-block bg-[#f1d782] text-black font-semibold px-6 py-3 rounded-xl shadow hover:bg-[#c5a468] transition"
-        >
-          Book Consultation
-        </Link>
+          <Link
+            to="/appointments"
+            className="mt-6 inline-block bg-[#f1d782] text-black font-semibold px-6 py-3 rounded-xl shadow hover:bg-[#c5a468] transition">
+            Book Consultation
+          </Link>
       </div>
     </section>
   );

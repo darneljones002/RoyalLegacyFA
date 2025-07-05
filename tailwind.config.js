@@ -12,6 +12,9 @@ module.exports = {
           clay: "#000000",
         },
       },
+      fontFamily: {
+        gistesy: ["Gistesy", "cursive"],
+      },
     },
   },
   plugins: [],

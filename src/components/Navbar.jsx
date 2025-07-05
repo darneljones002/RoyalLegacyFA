@@ -7,8 +7,7 @@ function Navbar() {
   return (
     <nav className="bg-earth-medium text-earth-dark shadow-md">
       <div className="container mx-auto flex justify-between items-center p-4">
-        <h1 className="text-2xl font-bold">Dr. Monitta Williams</h1>
-
+        <h1 className="text-3xl font-gistesy">Royal Legacy Financial Advisors</h1>
         <button
           className="md:hidden text-earth-clay focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
@@ -29,9 +28,9 @@ function Navbar() {
           </svg>
         </button>
 
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex space-x-6 font-bold">
           {['/', '/about', '/services', '/appointments', '/speaking'].map((path, idx) => {
-            const labels = ['Home', 'About Me', 'Services', 'Appointment Scheduling', 'Speaking Engagements'];
+            const labels = ['Home', 'About Me', 'Services', 'Consultation', 'Appearances'];
             return (
               <Link
                 key={path}
@@ -49,7 +48,7 @@ function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-earth-light px-4 py-2 space-y-2">
           {['/', '/about', '/services', '/appointments', '/speaking'].map((path, idx) => {
-            const labels = ['Home', 'About Me', 'Services', 'Appointment Scheduling', 'Speaking Engagements'];
+            const labels = ['Home', 'About Me', 'Services', 'Consultation', 'Appearances'];
             return (
               <Link
                 key={path}

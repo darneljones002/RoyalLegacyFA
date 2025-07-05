@@ -76,3 +76,10 @@ code {
     }
   }
 }
+
+@font-face {
+  font-family: 'Gistesy';
+  src: url('./assets/fonts/Gistesy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -10,9 +10,9 @@ import Speaking from './pages/Speaking';
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-earth-light text-earth-dark">
+      <div className="flex flex-col bg-earth-light text-earth-dark">
         <Navbar />
-        <main className="flex-grow">
+        <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

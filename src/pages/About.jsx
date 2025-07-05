@@ -1,9 +1,13 @@
-import React from 'react';
-import headshot from '../assets/slide2-4.jpg';
+import React, {useState} from 'react';
+import headshot from '../assets/slide2-5.jpg';
 import headshot1 from '../assets/slide2-1.jpeg';
+import { PlayCircle, X } from 'lucide-react';
+import Modal from 'react-modal';
+
 // import awardPhoto from '../assets/award.jpg';
 
 function About() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="bg-[#e5e2d6] text-[#000000] font-sans">
       {/* Header */}
@@ -13,7 +17,7 @@ function About() {
           alt="Monitta speaking"
           className="w-40 h-40 rounded-full object-cover mx-auto border-4 border-[#c5a468] shadow-md"
         />
-        <h2 className="text-3xl sm:text-4xl font-bold mt-4 text-[#000000]">Monitta Williams</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mt-4 text-[#000000]">Dr. Monitta Williams</h2>
         <p className="text-lg sm:text-xl mt-2 text-[#966639]">
           Multi-Award Winning Financial Professional & Educator
         </p>
@@ -52,17 +56,48 @@ function About() {
           <img src={headshot1} alt="Community event" className="rounded-lg shadow-lg" />
         </div>
       </section>
+       {/* Testimonial Video Section */}
+      <section className="bg-[#c5a468] text-[#000000] py-12 px-6 mt-12 text-center">
+        <h4 className="text-2xl font-bold mb-6">Client Testimony</h4>
 
-      {/* Contact */}
-      <section className="bg-[#c5a468] text-[#000000] text-center py-10">
-        <p className="text-xl font-semibold">Click below to schedule a consultation:</p>
-        <a
-          href="mailto:molifeinsures@gmail.com"
-          className="mt-4 inline-block bg-[#000000] text-[#f1d782] px-6 py-3 rounded-lg text-lg font-bold shadow-md hover:bg-[#966639] transition"
-        >
-          molifeinsures@gmail.com
-        </a>
+        {/* Play Icon Trigger */}
+        <div className="relative max-w-xl mx-auto cursor-pointer group" onClick={() => setIsOpen(true)}>
+          <img
+            src="" 
+            alt=""
+            className="w-full h-auto rounded-lg shadow-lg"
+          />
+          <PlayCircle
+            size={64}
+            className="absolute inset-0 m-auto text-[#f1d782] drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
+          />
+        </div>
       </section>
+      <Modal
+        isOpen={isOpen}
+        onRequestClose={() => setIsOpen(false)}
+        contentLabel="Testimonial Video"
+        closeTimeoutMS={300}
+        className="modal-content"
+        overlayClassName="modal-overlay">
+        {/* Close Button */}
+        <button
+          onClick={() => setIsOpen(false)}
+          className="absolute top-4 right-4 z-50 text-[#f1d782] hover:text-white transition"> 
+          <X size={28} />
+        </button>
+
+        {/* Video */}
+        <div className="w-full h-[65vh] sm:h-[75vh] md:h-[85vh] lg:h-screen relative z-0 rounded-lg overflow-hidden">
+          <video
+            controls
+            autoPlay
+            className="absolute top-0 left-0 w-full h-full object-cover rounded-xl shadow-lg">
+            <source src="/videos/testimonial.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </Modal>
     </div>
   );
 }

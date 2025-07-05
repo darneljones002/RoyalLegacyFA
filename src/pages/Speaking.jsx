@@ -1,6 +1,12 @@
-import { Sparkles, Mic, Users, CalendarDays } from 'lucide-react'; // optional icons
+import { Sparkles, Mic, Users, CalendarDays } from 'lucide-react';
+import speaking1 from '../assets/slide1.jpg';
+import speaking2 from '../assets/slide4.jpg';
+import speaking3 from '../assets/slide3.jpg';
+import speaking4 from '../assets/group.jpg';
 
 function Speaking() {
+  const images = [speaking1, speaking2, speaking3, speaking4];
+
   return (
     <div className="bg-[#e5e2d6] text-[#000000] min-h-screen py-12 px-4 flex flex-col items-center">
       {/* Hero */}
@@ -12,6 +18,19 @@ function Speaking() {
           Inspiring audiences with wisdom, wealth-building tools, and faith-centered financial guidance.
         </p>
       </section>
+
+      {/* Image Gallery */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 max-w-6xl">
+        {images.map((src, idx) => (
+          <div key={idx} className="overflow-hidden rounded-lg shadow-lg group">
+            <img
+              src={src}
+              alt={`Speaking event ${idx + 1}`}
+              className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+        ))}
+      </div>
 
       {/* Speaking Topics */}
       <div className="grid sm:grid-cols-2 gap-8 max-w-5xl mb-16">

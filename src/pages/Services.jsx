@@ -1,26 +1,20 @@
-import React, { useState } from 'react';
-import Modal from 'react-modal';
-import { PlayCircle, X } from 'lucide-react';
-
-Modal.setAppElement('#root');
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Services() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div className="p-8 bg-[#966639] text-[#e5e2d6]">
       {/* Services Section */}
-      <section className="py-10 px-6">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-3 gap-8">
-          {/* Life & Health Coverage */}
+      <section className="py-10 px-6 text-center">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-3 gap-8 text-left">
           <div>
-            <h4 className="text-2xl font-bold mb-4">Life & Health Coverage</h4>
+            <h4 className="text-2xl font-bold mb-4">Wealth & Health Protection</h4>
             <ul className="list-disc pl-5 text-lg space-y-2">
-              <li>Final Expense</li>
-              <li>SAFE Investments</li>
-              <li>Lifestyle Protection</li>
-              <li>College Tuition Preparation</li>
-              <li>Retirement Income Guarantee</li>
+              <li>Legacy & Estate Planning</li>
+              <li>Secure Savings & Growth Strategies</li>
+              <li>Family Lifestyle Security</li>
+              <li>College Funding Solutions</li>
+              <li>Guaranteed Retirement Income</li>
             </ul>
           </div>
 
@@ -31,69 +25,33 @@ function Services() {
               “I’ve known Monitta for several years, and I know she is trustworthy, professional, and
               a helper by nature. She is knowledgeable in financial services and insurance coverage.
               She is patient when explaining and giving guidance on what would possibly be best for
-              my family’s needs.”
+              my family’s needs.” - Levetta W.
             </p>
           </div>
 
-          {/* Financial Guidance */}
           <div>
-            <h4 className="text-2xl font-bold mb-4">Financial Guidance</h4>
+            <h4 className="text-2xl font-bold mb-4">Financial Empowerment & Coaching</h4>
             <ul className="list-disc pl-5 text-lg space-y-2">
               <li>Faith-Based Financial Coaching</li>
-              <li>Business Succession Planning</li>
-              <li>Wealth Building Strategies</li>
-              <li>Retirement & Investment Planning</li>
+              <li>Business Growth & Transition Planning</li>
+              <li>Generational Wealth Strategies</li>
+              <li>Personalized Retirement & Investment Plans</li>
             </ul>
           </div>
         </div>
       </section>
 
-      {/* Testimonial Video Section */}
-      <section className="bg-[#c5a468] text-[#000000] py-12 px-6 mt-12 text-center">
-        <h4 className="text-2xl font-bold mb-6">Client Testimony</h4>
-
-        {/* Play Icon Trigger */}
-        <div className="relative max-w-xl mx-auto cursor-pointer group" onClick={() => setIsOpen(true)}>
-          <img
-            src="" 
-            alt=""
-            className="w-full h-auto rounded-lg shadow-lg"
-          />
-          <PlayCircle
-            size={64}
-            className="absolute inset-0 m-auto text-[#f1d782] drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
-          />
-        </div>
+      {/* Contact */}
+      <section className="bg-[#c5a468] text-[#000000] text-center py-10">
+        <p className="text-xl font-semibold">Click below to schedule a consultation:</p>
+        <Link
+          to="/appointments"
+          className="mt-6 inline-block bg-[#000000] text-[#f1d782] font-semibold px-6 py-3 rounded-xl shadow hover:bg-[#966639] transition">
+          mwilliams@royallegacyfa.com
+        </Link>
       </section>
-      <Modal
-        isOpen={isOpen}
-        onRequestClose={() => setIsOpen(false)}
-        contentLabel="Testimonial Video"
-        closeTimeoutMS={300}
-        className="modal-content"
-        overlayClassName="modal-overlay">
-        {/* Close Button */}
-        <button
-          onClick={() => setIsOpen(false)}
-          className="absolute top-4 right-4 z-50 text-[#f1d782] hover:text-white transition"> 
-          <X size={28} />
-        </button>
-
-        {/* Video */}
-        <div className="w-full h-[65vh] sm:h-[75vh] md:h-[85vh] lg:h-screen relative z-0 rounded-lg overflow-hidden">
-          <video
-            controls
-            autoPlay
-            className="absolute top-0 left-0 w-full h-full object-cover rounded-xl shadow-lg">
-            <source src="/videos/testimonial.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </Modal>
     </div>
   );
 }
 
 export default Services;
-
-  
