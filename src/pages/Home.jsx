@@ -9,7 +9,7 @@ const slides = [
     image: slide1,
     captionTitle: 'Empowering Legacies',
     captionText: 'Guiding families to financial freedom and future wealth.',
-    position: 'object-[center_120%]'
+    position: 'object-[center_100%]'
   },
   {
     image: slide2,
@@ -21,20 +21,20 @@ const slides = [
     image: slide3,
     captionTitle: 'Award-Winning Expertise',
     captionText: 'Recognized leadership in financial education and services.',
-    position: 'object-[center_60%]'
+    position: 'object-[center_50%]'
   },
 ];
 
 function Home() {
   return (
-    <section className="relative w-full h-screen">
+    <section className="relative w-full">
       <ImageCarousel slides={slides} />
 
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/50 z-10" />
 
       {/* Text + CTA */}
-     <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-20 px-6 sm:px-8 mb-4">
+     <div className="absolute inset-0 flex flex-col items-center justify-end text-center z-20 px-6 sm:px-8 pb-16">
         <h2 className="text-3xl sm:text-5xl font-bold text-earth-green drop-shadow-lg">
           Creating | Building | Shifting Legacy
         </h2>

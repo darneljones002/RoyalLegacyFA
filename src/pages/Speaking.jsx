@@ -26,7 +26,8 @@ function Speaking() {
             <img
               src={src}
               alt={`Speaking event ${idx + 1}`}
-              className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-105"
+
             />
           </div>
         ))}
