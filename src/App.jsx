@@ -6,7 +6,10 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Appointments from './pages/Appointments';
 import Speaking from './pages/Speaking';
+import Reviews from './pages/Reviews';
+import ReviewClosed from './pages/ReviewClosed';
 
+const newReviews = JSON.parse(localStorage.getItem('newReviews')) || [];
 function App() {
   return (
     <Router>
@@ -19,6 +22,8 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/appointments" element={<Appointments />} />
             <Route path="/speaking" element={<Speaking />} />
+            <Route path="/reviews" element={<Reviews />} />
+            <Route path="/reviews" element={newReviews.length >= 40 ? <ReviewClosed /> : <Reviews />} />
           </Routes>
         </main>
         <Footer />

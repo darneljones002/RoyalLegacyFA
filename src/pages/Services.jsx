@@ -20,7 +20,13 @@ function Services() {
 
           {/* Testimonial Box */}
           <div className="bg-[#f1d782] text-[#000000] p-6 rounded-lg shadow-md">
-            <h5 className="text-xl font-bold mb-3 inline-block border-b-4 border-[#966639] font-[Cinzel]">Customer Feedback</h5>
+            {/* <h5 className="text-xl font-bold mb-3 inline-block border-b-4 border-[#966639] font-[Cinzel]">Customer Feedback</h5> */}
+            <Link
+              to="/reviews"
+              className="text-[#000000] hover:text-earth-blue text-xl font-bold mb-3 inline-block border-b-4 border-[#966639] font-[Cinzel transition-colors duration-300"
+            >
+              Customer Feedback
+            </Link>
             <p className="italic text-sm sm:text-base">
               “I’ve known Monitta for several years, and I know she is trustworthy, professional, and
               a helper by nature. She is knowledgeable in financial services and insurance coverage.
