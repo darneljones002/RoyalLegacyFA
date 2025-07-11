@@ -10,19 +10,19 @@ import Reviews from './pages/Reviews';
 import ReviewClosed from './pages/ReviewClosed';
 
 const newReviews = JSON.parse(localStorage.getItem('newReviews')) || [];
+
 function App() {
   return (
     <Router>
-      <div className="flex flex-col bg-earth-light text-earth-dark">
+      <div className="flex flex-col min-h-screen bg-earth-light text-earth-dark">
         <Navbar />
-        <main>
+        <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/appointments" element={<Appointments />} />
             <Route path="/speaking" element={<Speaking />} />
-            <Route path="/reviews" element={<Reviews />} />
             <Route path="/reviews" element={newReviews.length >= 40 ? <ReviewClosed /> : <Reviews />} />
           </Routes>
         </main>

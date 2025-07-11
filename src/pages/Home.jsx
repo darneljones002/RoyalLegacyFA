@@ -34,12 +34,12 @@ function Home() {
       <div className="absolute inset-0 bg-black/50 z-10" />
 
       {/* Text + CTA */}
-     <div className="absolute inset-0 flex flex-col items-center justify-end text-center z-20 px-6 sm:px-8 pb-16">
-        <h2 className="text-3xl sm:text-5xl font-bold text-earth-green drop-shadow-lg font-[Cinzel]">
-          Creating | Building | Shifting Legacy
+     <div className="absolute inset-0 flex flex-col items-center justify-end text-center z-20 px-6 sm:px-8 pb-16 font-[Cinzel]">
+        <h2 className="text-3xl sm:text-5xl font-bold text-earth-green drop-shadow-lg">
+          Royal Legacy Financial Advisors
         </h2>
         <p className="mt-4 text-lg sm:text-2xl text-earth-light drop-shadow">
-          With Royal Legacy Financial Advisors
+          Creating | Building | Shifting Legacy
         </p>
           <Link
             to="/appointments"

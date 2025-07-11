@@ -16,11 +16,11 @@ function About() {
           alt="Logo"
           className="w-72 h-72 rounded-full object-cover mx-auto border-4 border-[#c5a468] shadow-md"
         />
-        <h2 className="text-3xl sm:text-4xl font-bold mt-4 text-[#000000] font-[Cinzel]">Royal Legacy Financial Advisors</h2>
-        <p className="text-lg sm:text-xl mt-2 text-earth-light">
+        <h2 className="text-3xl sm:text-4xl font-bold mt-4 text-[#000000] inline-block border-b-4 border-[#f1d782] font-[Cinzel]">Royal Legacy Financial Advisors</h2>
+        <p className="text-lg sm:text-xl mt-2 text-earth-light font-[Cinzel]">
           Multi-Award Winning Financial Professional & Educator
         </p>
-        <blockquote className="mt-6 italic text-[#000000] max-w-3xl mx-auto">
+        <blockquote className="mt-6 italic text-[#000000] inline-block border-b-4 border-[#f1d782] max-w-3xl mx-auto">
           “Helping working professionals & new families focus on creating a financially secure foundation.”
         </blockquote>
       </section>
@@ -37,7 +37,7 @@ function About() {
               specializes in financial literacy, wealth building, and legacy planning. With a heart for service and a commitment to excellence, 
               Dr. Williams combines her professional expertise with a personal mission to help clients achieve financial independence and long-term security. 
           </p>
-          <p className="mt-4 text-lg italic text-earth-light font-medium">
+          <p className="mt-4 text-lg italic text-earth-light font-medium border-l-4 border-earth-clay pl-4">
             “Financial professional licensed in 13 states, founder of Royal Legacy Financial Advisors, 
             helping families and businesses build lasting financial legacies.”
           </p>

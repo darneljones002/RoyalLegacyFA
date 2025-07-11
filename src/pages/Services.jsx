@@ -9,7 +9,7 @@ function Services() {
         <div className="max-w-6xl mx-auto grid lg:grid-cols-3 gap-8 text-left">
           <div>
             <h4 className="text-2xl font-bold mb-4 inline-block border-b-4 border-[#e5e2d6] text-center mx-auto font-[Cinzel]">Wealth & Health Protection</h4>
-            <ul className="list-disc pl-5 text-lg space-y-2">
+            <ul className="list-disc pl-5 text-lg space-y-2 font-[Cinzel]">
               <li>Legacy & Estate Planning</li>
               <li>Secure Savings & Growth Strategies</li>
               <li>Family Lifestyle Security</li>
@@ -25,7 +25,7 @@ function Services() {
               to="/reviews"
               className="text-[#000000] hover:text-earth-blue text-xl font-bold mb-3 inline-block border-b-4 border-[#966639] font-[Cinzel transition-colors duration-300"
             >
-              Customer Feedback
+              Customer Reviews
             </Link>
             <p className="italic text-sm sm:text-base">
               “I’ve known Monitta for several years, and I know she is trustworthy, professional, and
@@ -37,7 +37,7 @@ function Services() {
 
           <div>
             <h4 className="text-2xl font-bold mb-4 inline-block border-b-4 border-[#e5e2d6] font-[Cinzel]">Legacy Coaching</h4>
-            <ul className="list-disc pl-5 text-lg space-y-2">
+            <ul className="list-disc pl-5 text-lg space-y-2 font-[Cinzel]">
               <li>Faith-Based Financial Coaching</li>
               <li>Business Growth & Transition Planning</li>
               <li>Generational Wealth Strategies</li>

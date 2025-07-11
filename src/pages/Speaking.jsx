@@ -14,7 +14,7 @@ function Speaking() {
         <h2 className="text-4xl sm:text-5xl font-bold text-[#966639] mb-4 font-[Cinzel]">
            Let Royal Legacy Inspire and Equip Your Audience
         </h2>
-        <p className="text-lg sm:text-xl text-[#000000]">
+        <p className="text-lg sm:text-xl text-[#000000] font-[Cinzel]">
           Inspiring audiences with wisdom, wealth-building tools, and faith-centered financial guidance.
         </p>
       </section>
@@ -34,7 +34,7 @@ function Speaking() {
       </div>
 
       {/* Speaking Topics */}
-      <div className="grid sm:grid-cols-2 gap-8 max-w-5xl mb-16">
+      <div className="grid sm:grid-cols-2 gap-8 max-w-5xl mb-16 font-[Cinzel]">
         <div className="bg-[#f1d782] p-6 rounded-lg shadow-md text-center">
           <Mic className="mx-auto h-8 w-8 text-[#000000]" />
           <h4 className="text-xl font-semibold mt-4 mb-2">Keynote Addresses</h4>
@@ -58,7 +58,7 @@ function Speaking() {
       </div>
 
       {/* Contact CTA */}
-      <section className="text-center">
+      <section className="text-center font-[Cinzel]">
         <p className="text-lg mb-4">
           For bookings and availability, please email us at:
           <br />
