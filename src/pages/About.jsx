@@ -1,24 +1,23 @@
 import React, {useState} from 'react';
 import headshot from '../assets/slide2-5.jpg';
 import headshot1 from '../assets/slide2-1.jpeg';
+import logo from '../assets/logos/RFL2-logo.png'
 import { PlayCircle, X } from 'lucide-react';
 import Modal from 'react-modal';
-
-// import awardPhoto from '../assets/award.jpg';
 
 function About() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="bg-[#e5e2d6] text-[#000000] font-sans">
-      {/* Header */}
-      <section className="py-10 px-6 text-center bg-[#f1d782]">
+    <div className="bg-[#c5a468] text-[#000000] font-sans">
+      {/* Header]*/}
+      <section className="py-10 px-6 text-center bg-[#c5a468]">
         <img
-          src={headshot}
-          alt="Monitta speaking"
-          className="w-40 h-40 rounded-full object-cover mx-auto border-4 border-[#c5a468] shadow-md"
+          src={logo}
+          alt="Logo"
+          className="w-72 h-72 rounded-full object-cover mx-auto border-4 border-[#c5a468] shadow-md"
         />
-        <h2 className="text-3xl sm:text-4xl font-bold mt-4 text-[#000000]">Dr. Monitta Williams</h2>
-        <p className="text-lg sm:text-xl mt-2 text-[#966639]">
+        <h2 className="text-3xl sm:text-4xl font-bold mt-4 text-[#000000]">Royal Legacy Financial Advisors</h2>
+        <p className="text-lg sm:text-xl mt-2 text-earth-light">
           Multi-Award Winning Financial Professional & Educator
         </p>
         <blockquote className="mt-6 italic text-[#000000] max-w-3xl mx-auto">
@@ -29,7 +28,7 @@ function About() {
       {/* Main Content */}
       <section className="grid md:grid-cols-2 gap-8 px-6 py-12 max-w-6xl mx-auto items-start">
         <div>
-          <h3 className="text-2xl font-bold text-[#966639] mb-4 border-l-4 border-[#c5a468] pl-4">
+          <h3 className="text-2xl font-bold text-earth-light mb-4 border-l-4 border-earth-clay pl-4">
             Meet the Agent
           </h3>
           <p className="text-lg leading-relaxed">
@@ -38,7 +37,7 @@ function About() {
               specializes in financial literacy, wealth building, and legacy planning. With a heart for service and a commitment to excellence, 
               Dr. Williams combines her professional expertise with a personal mission to help clients achieve financial independence and long-term security. 
           </p>
-          <p className="mt-4 text-lg italic text-[#966639] font-medium">
+          <p className="mt-4 text-lg italic text-earth-light font-medium">
             “Financial professional licensed in 13 states, founder of Royal Legacy Financial Advisors, 
             helping families and businesses build lasting financial legacies.”
           </p>
@@ -53,12 +52,12 @@ function About() {
         {/* Photos */}
         <div className="grid grid-cols-1 gap-4">
           {/* <img src={awardPhoto} alt="Award ceremony" className="rounded-lg shadow-lg" /> */}
-          <img src={headshot1} alt="Community event" className="rounded-lg shadow-lg" />
+          <img src={headshot} alt="Community event" className="rounded-lg shadow-lg" />
         </div>
       </section>
        {/* Testimonial Video Section */}
       <section className="bg-[#c5a468] text-[#000000] py-12 px-6 mt-12 text-center">
-        <h4 className="text-2xl font-bold mb-6">Client Testimony</h4>
+        <h4 className="text-2xl font-bold mb-10">What Our Customers Say</h4>
 
         {/* Play Icon Trigger */}
         <div className="relative max-w-xl mx-auto cursor-pointer group" onClick={() => setIsOpen(true)}>

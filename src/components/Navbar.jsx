@@ -6,8 +6,12 @@ function Navbar() {
 
   return (
     <nav className="bg-earth-medium text-earth-dark shadow-md">
-      <div className="container mx-auto flex justify-between items-center p-4">
-        <h1 className="text-3xl font-gistesy">Royal Legacy Financial Advisors</h1>
+      <div className="container mx-auto flex flex-wrap justify-between items-center gap-2 p-4">
+        {/* <h1 className="text-3xl font-gistesy">Royal Legacy Financial Advisors</h1> */}
+        <h1 className="font-gistesy whitespace-nowrap text-2xl sm:text-3xl flex-shrink-0">
+          <span className="hidden md:inline">Royal Legacy Financial Advisors</span>
+          <span className="inline md:hidden">Royal Legacy Financial Advisors</span>
+        </h1>
         <button
           className="md:hidden text-earth-clay focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
@@ -30,7 +34,7 @@ function Navbar() {
 
         <div className="hidden md:flex space-x-6 font-bold">
           {['/', '/about', '/services', '/appointments', '/speaking'].map((path, idx) => {
-            const labels = ['Home', 'About Me', 'Services', 'Consultation', 'Appearances'];
+            const labels = ['Home', 'About', 'Services', 'Consultation', 'Appearances'];
             return (
               <Link
                 key={path}
