@@ -11,8 +11,8 @@ function Speaking() {
     <div className="bg-[#e5e2d6] text-[#000000] min-h-screen py-12 px-4 flex flex-col items-center">
       {/* Hero */}
       <section className="max-w-4xl text-center mb-12 animate-fade-in">
-        <h2 className="text-4xl sm:text-5xl font-bold text-[#966639] mb-4">
-          Book Dr. Monitta Williams
+        <h2 className="text-4xl sm:text-5xl font-bold text-[#966639] mb-4 font-[Cinzel]">
+           Let Royal Legacy Inspire and Equip Your Audience
         </h2>
         <p className="text-lg sm:text-xl text-[#000000]">
           Inspiring audiences with wisdom, wealth-building tools, and faith-centered financial guidance.

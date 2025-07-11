@@ -8,7 +8,7 @@ function Services() {
       <section className="py-10 px-6 text-center">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-3 gap-8 text-left">
           <div>
-            <h4 className="text-2xl font-bold mb-4">Wealth & Health Protection</h4>
+            <h4 className="text-2xl font-bold mb-4 inline-block border-b-4 border-[#e5e2d6] text-center mx-auto font-[Cinzel]">Wealth & Health Protection</h4>
             <ul className="list-disc pl-5 text-lg space-y-2">
               <li>Legacy & Estate Planning</li>
               <li>Secure Savings & Growth Strategies</li>
@@ -20,17 +20,17 @@ function Services() {
 
           {/* Testimonial Box */}
           <div className="bg-[#f1d782] text-[#000000] p-6 rounded-lg shadow-md">
-            <h5 className="text-xl font-bold mb-3">Testimonial</h5>
+            <h5 className="text-xl font-bold mb-3 inline-block border-b-4 border-[#966639] font-[Cinzel]">Customer Feedback</h5>
             <p className="italic text-sm sm:text-base">
               “I’ve known Monitta for several years, and I know she is trustworthy, professional, and
               a helper by nature. She is knowledgeable in financial services and insurance coverage.
               She is patient when explaining and giving guidance on what would possibly be best for
-              my family’s needs.” - Levetta W.
+              my family’s needs.” <br/>-Levitta W.
             </p>
           </div>
 
           <div>
-            <h4 className="text-2xl font-bold mb-4">Financial Empowerment & Coaching</h4>
+            <h4 className="text-2xl font-bold mb-4 inline-block border-b-4 border-[#e5e2d6] font-[Cinzel]">Legacy Coaching</h4>
             <ul className="list-disc pl-5 text-lg space-y-2">
               <li>Faith-Based Financial Coaching</li>
               <li>Business Growth & Transition Planning</li>
@@ -43,7 +43,7 @@ function Services() {
 
       {/* Contact */}
       <section className="bg-[#c5a468] text-[#000000] text-center py-10">
-        <p className="text-xl font-semibold">Click below to schedule a consultation:</p>
+        <p className="text-xl font-[Cinzel]">Click below to schedule a consultation:</p>
         <Link
           to="/appointments"
           className="mt-6 inline-block bg-[#000000] text-[#f1d782] font-semibold px-6 py-3 rounded-xl shadow hover:bg-[#966639] transition">

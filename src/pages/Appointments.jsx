@@ -1,15 +1,3 @@
-// function Appointments() {
-//     return (
-//       <div className="p-8">
-//         <h2 className="text-3xl font-semibold mb-4">Book an Appointment</h2>
-//         <p>To schedule a consultation, please email us at <strong>appointments@royallegacy.com</strong> or use the calendar below.</p>
-//         {/* Embed Calendly or other appointment tool here */}
-//       </div>
-//     );
-//   }
-  
-//   export default Appointments;
-  
 import { useEffect, useRef, useState } from 'react';
 
 function Appointments() {
@@ -33,7 +21,7 @@ function Appointments() {
 
   return (
     <div className="min-h-screen bg-[#e5e2d6] text-[#000000] flex flex-col items-center px-4 py-10">
-      <h2 className="text-3xl font-bold mb-6 text-center">
+      <h2 className="text-3xl font-bold mb-6 text-center font-[Cinzel]">
         Schedule Your Appointment
       </h2>
 

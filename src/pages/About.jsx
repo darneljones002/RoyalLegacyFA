@@ -16,7 +16,7 @@ function About() {
           alt="Logo"
           className="w-72 h-72 rounded-full object-cover mx-auto border-4 border-[#c5a468] shadow-md"
         />
-        <h2 className="text-3xl sm:text-4xl font-bold mt-4 text-[#000000]">Royal Legacy Financial Advisors</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mt-4 text-[#000000] font-[Cinzel]">Royal Legacy Financial Advisors</h2>
         <p className="text-lg sm:text-xl mt-2 text-earth-light">
           Multi-Award Winning Financial Professional & Educator
         </p>
@@ -28,7 +28,7 @@ function About() {
       {/* Main Content */}
       <section className="grid md:grid-cols-2 gap-8 px-6 py-12 max-w-6xl mx-auto items-start">
         <div>
-          <h3 className="text-2xl font-bold text-earth-light mb-4 border-l-4 border-earth-clay pl-4">
+          <h3 className="font-[Cinzel] text-2xl font-bold text-earth-light mb-4 border-l-4 border-earth-clay pl-4">
             Meet the Agent
           </h3>
           <p className="text-lg leading-relaxed">
@@ -56,8 +56,8 @@ function About() {
         </div>
       </section>
        {/* Testimonial Video Section */}
-      <section className="bg-[#c5a468] text-[#000000] py-12 px-6 mt-12 text-center">
-        <h4 className="text-2xl font-bold mb-10">What Our Customers Say</h4>
+      <section className="bg-[#f1d782] text-[#000000] py-12 px-6 mt-12 text-center">
+        <h4 className="font-[Cinzel] text-2xl font-bold mb-10">What Our Customers Say</h4>
 
         {/* Play Icon Trigger */}
         <div className="relative max-w-xl mx-auto cursor-pointer group" onClick={() => setIsOpen(true)}>
@@ -68,7 +68,7 @@ function About() {
           />
           <PlayCircle
             size={64}
-            className="absolute inset-0 m-auto text-[#f1d782] drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
+            className="absolute inset-0 m-auto text-[#000000] drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
           />
         </div>
       </section>

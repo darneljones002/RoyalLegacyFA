@@ -35,7 +35,7 @@ function Home() {
 
       {/* Text + CTA */}
      <div className="absolute inset-0 flex flex-col items-center justify-end text-center z-20 px-6 sm:px-8 pb-16">
-        <h2 className="text-3xl sm:text-5xl font-bold text-earth-green drop-shadow-lg">
+        <h2 className="text-3xl sm:text-5xl font-bold text-earth-green drop-shadow-lg font-[Cinzel]">
           Creating | Building | Shifting Legacy
         </h2>
         <p className="mt-4 text-lg sm:text-2xl text-earth-light drop-shadow">
@@ -44,7 +44,7 @@ function Home() {
           <Link
             to="/appointments"
             className="mt-6 inline-block bg-[#f1d782] text-black font-semibold px-6 py-3 rounded-xl shadow hover:bg-[#c5a468] transition">
-            Book Consultation
+            Schedule an Appointment
           </Link>
       </div>
     </section>

@@ -7,7 +7,6 @@ function Navbar() {
   return (
     <nav className="bg-earth-medium text-earth-dark shadow-md">
       <div className="container mx-auto flex flex-wrap justify-between items-center gap-2 p-4">
-        {/* <h1 className="text-3xl font-gistesy">Royal Legacy Financial Advisors</h1> */}
         <h1 className="font-gistesy whitespace-nowrap text-2xl sm:text-3xl flex-shrink-0">
           <span className="hidden md:inline">Royal Legacy Financial Advisors</span>
           <span className="inline md:hidden">Royal Legacy Financial Advisors</span>
@@ -32,7 +31,7 @@ function Navbar() {
           </svg>
         </button>
 
-        <div className="hidden md:flex space-x-6 font-bold">
+        <div className="hidden md:flex space-x-6 font-bold font-[Cinzel]">
           {['/', '/about', '/services', '/appointments', '/speaking'].map((path, idx) => {
             const labels = ['Home', 'About', 'Services', 'Consultation', 'Appearances'];
             return (
