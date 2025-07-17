@@ -1,11 +1,11 @@
 import { Sparkles, Mic, Users, CalendarDays } from 'lucide-react';
-import speaking1 from '../assets/slide1.jpg';
+import speaking1 from '../assets/speaking-retreat.jpg';
 import speaking2 from '../assets/slide4.jpg';
 import speaking3 from '../assets/slide3.jpg';
 import speaking4 from '../assets/group.jpg';
 
 function Speaking() {
-  const images = [speaking1, speaking2, speaking3, speaking4];
+  const images = [ speaking1, speaking2, speaking3, speaking4];
 
   return (
     <div className="bg-[#e5e2d6] text-[#000000] min-h-screen py-12 px-4 flex flex-col items-center">
@@ -47,7 +47,7 @@ function Speaking() {
         </div>
         <div className="bg-[#966639] p-6 rounded-lg shadow-md text-center text-white">
           <CalendarDays className="mx-auto h-8 w-8" />
-          <h4 className="text-xl font-semibold mt-4 mb-2">Panels & Retreats</h4>
+          <h4 className="text-xl font-semibold mt-4 mb-2">Conferences & Retreats</h4>
           <p>Professional insights at conferences, retreats, or community events.</p>
         </div>
         <div className="bg-[#000000] p-6 rounded-lg shadow-md text-center text-white">
@@ -62,10 +62,10 @@ function Speaking() {
         <p className="text-lg mb-4">
           For bookings and availability, please email us at:
           <br />
-          <strong className="text-[#966639]">speaking@royallegacy.com</strong>
+          <strong className="text-[#966639]">speaking@royallegacyfa.com</strong>
         </p>
         <a
-          href="mailto:speaking@royallegacy.com"
+          href="mailto:speaking@royallegacyfa.com"
           className="inline-block bg-[#966639] hover:bg-[#c5a468] text-white font-bold py-3 px-6 rounded-full transition duration-300"
         >
           Request Booking

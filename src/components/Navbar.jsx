@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="bg-earth-medium text-earth-dark shadow-md">
       <div className="container mx-auto flex flex-wrap justify-between items-center gap-2 p-4">
-        <h1 className="font-gistesy whitespace-nowrap text-2xl sm:text-3xl flex-shrink-0">
+        <h1 className="font-citadel whitespace-nowrap text-2xl sm:text-3xl flex-shrink-0">
           <span className="hidden md:inline">Royal Legacy Financial Advisors</span>
           <span className="inline md:hidden">Royal Legacy Financial Advisors</span>
         </h1>

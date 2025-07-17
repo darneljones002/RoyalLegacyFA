@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import headshot from '../assets/slide2-5.jpg';
-//import headshot1 from '../assets/slide2-1.jpeg';
 import logo from '../assets/logos/RFL2-logo.png'
 import { PlayCircle, X } from 'lucide-react';
 import Modal from 'react-modal';

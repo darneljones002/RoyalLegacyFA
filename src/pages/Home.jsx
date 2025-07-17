@@ -31,20 +31,27 @@ function Home() {
       <ImageCarousel slides={slides} />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/50 z-10" />
+      <div className="absolute inset-0 bg-black/50 z-10 pointer-events-none" />
 
       {/* Text + CTA */}
-     <div className="absolute inset-0 flex flex-col items-center justify-end text-center z-20 px-6 sm:px-8 pb-16 font-[Cinzel]">
+     <div className="absolute inset-0 flex flex-col items-center justify-end text-center z-20 px-6 sm:px-8 pb-16 font-[Cinzel] pointer-events-none">
         <h2 className="text-3xl sm:text-5xl font-bold text-earth-green drop-shadow-lg">
           Royal Legacy Financial Advisors
         </h2>
-        <p className="mt-4 text-lg sm:text-2xl text-earth-light drop-shadow">
+        <p className="mt-4 font-bold text-lg sm:text-2xl text-earth-light drop-shadow">
           Creating | Building | Shifting Legacy
         </p>
           <Link
             to="/appointments"
-            className="mt-6 inline-block bg-[#f1d782] text-black font-semibold px-6 py-3 rounded-xl shadow hover:bg-[#c5a468] transition">
-            Schedule an Appointment
+            className="mt-6 inline-block bg-[#f1d782] text-black font-semibold px-6 py-3 rounded-xl shadow hover:bg-[#c5a468] transition pointer-events-auto">
+            Schedule a Consultation
+          </Link>
+
+          <Link
+              to="/reviews"
+              className="mt-4 inline-block bg-[#966639] text-[#e5e2d6] font-semibold px-6 py-3 rounded-xl shadow hover:bg-[#c5a468] transition pointer-events-auto"
+            >
+              Leave a Review
           </Link>
       </div>
     </section>

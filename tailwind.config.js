@@ -15,6 +15,7 @@ module.exports = {
       },
       fontFamily: {
         gistesy: ["Gistesy", "cursive"],
+        citadel: ['"Great Vibes"', "cursive"],
       },
     },
   },

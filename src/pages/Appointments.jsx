@@ -22,7 +22,7 @@ function Appointments() {
   return (
     <div className="min-h-screen bg-[#e5e2d6] text-[#000000] flex flex-col items-center px-4 py-10">
       <h2 className="text-3xl font-bold mb-6 text-center font-[Cinzel]">
-        Schedule Your Appointment
+        Schedule Your Consultation
       </h2>
 
       {submitted ? (

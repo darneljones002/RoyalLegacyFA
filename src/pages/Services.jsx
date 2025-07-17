@@ -10,7 +10,7 @@ function Services() {
           <div>
             <h4 className="text-2xl font-bold mb-4 inline-block border-b-4 border-[#e5e2d6] text-center mx-auto font-[Cinzel]">Wealth & Health Protection</h4>
             <ul className="list-disc pl-5 text-lg space-y-2 font-[Cinzel]">
-              <li>Legacy & Estate Planning</li>
+              <li>Legacy & Retirement Planning</li>
               <li>Secure Savings & Growth Strategies</li>
               <li>Family Lifestyle Security</li>
               <li>College Funding Solutions</li>
@@ -20,13 +20,7 @@ function Services() {
 
           {/* Testimonial Box */}
           <div className="bg-[#f1d782] text-[#000000] p-6 rounded-lg shadow-md">
-            {/* <h5 className="text-xl font-bold mb-3 inline-block border-b-4 border-[#966639] font-[Cinzel]">Customer Feedback</h5> */}
-            <Link
-              to="/reviews"
-              className="text-[#000000] hover:text-earth-blue text-xl font-bold mb-3 inline-block border-b-4 border-[#966639] font-[Cinzel transition-colors duration-300"
-            >
-              Customer Reviews
-            </Link>
+            <h5 className="text-xl text-center block font-bold mb-3 border-b-4 border-[#966639] font-[Cinzel]">Customer Feedback</h5>
             <p className="italic text-sm sm:text-base">
               “I’ve known Monitta for several years, and I know she is trustworthy, professional, and
               a helper by nature. She is knowledgeable in financial services and insurance coverage.
@@ -36,7 +30,9 @@ function Services() {
           </div>
 
           <div>
-            <h4 className="text-2xl font-bold mb-4 inline-block border-b-4 border-[#e5e2d6] font-[Cinzel]">Legacy Coaching</h4>
+            <h4 className="text-2xl font-bold mb-4 border-b-4 border-[#e5e2d6] font-[Cinzel] text-center block">
+              Legacy<br />Coaching
+            </h4>
             <ul className="list-disc pl-5 text-lg space-y-2 font-[Cinzel]">
               <li>Faith-Based Financial Coaching</li>
               <li>Business Growth & Transition Planning</li>
