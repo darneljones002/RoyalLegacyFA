@@ -26,10 +26,9 @@ const ImageCarousel = ({ slides }) => {
           <div className="relative w-full h-[65vh] sm:h-[75vh] md:h-[85vh] lg:h-screen overflow-hidden">
             <img
               src={slide.image}
-              alt={slide.captionTitle}
-              className={`w-full h-full object-cover ${slide.position || 'object-center'}`}
+              alt={`Slide ${idx + 1}`}
+              className={`w-full h-full object-cover ${slide.position}`}
             />
-            {/* Optional per-slide captions, but we overlay globally from Home */}
           </div>
         </SwiperSlide>
       ))}
