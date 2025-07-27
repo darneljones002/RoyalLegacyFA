@@ -35,7 +35,7 @@ function Services() {
             </h4>
             <ul className="list-disc pl-5 text-lg space-y-2 font-[Cinzel]">
               <li>Faith-Based Financial Coaching</li>
-              <li>Business Growth & Transition Planning</li>
+              <li>Business Growth & <br/> Transition Planning</li>
               <li>Generational Wealth Strategies</li>
               <li>Personalized Retirement & Investment Plans</li>
             </ul>

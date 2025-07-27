@@ -5,7 +5,33 @@ import speaking3 from '../assets/slide3.jpg';
 import speaking4 from '../assets/group.jpg';
 
 function Speaking() {
-  const images = [ speaking1, speaking2, speaking3, speaking4];
+  const images = [speaking1, speaking2, speaking3, speaking4];
+  const cards = [
+    {
+      icon: <Sparkles className="mx-auto h-8 w-8 text-[#f1d782]" />,
+      title: "Custom Engagements",
+      description: "We tailor sessions to meet your audience’s unique needs and goals.",
+      bg: "bg-[#000000] text-white",
+    },
+    {
+      icon: <Mic className="mx-auto h-8 w-8 text-[#000000]" />,
+      title: "Keynote Addresses",
+      description: "Custom messages on legacy, leadership, and financial empowerment.",
+      bg: "bg-[#f1d782] text-[#000000]",
+    },
+    {
+      icon: <CalendarDays className="mx-auto h-8 w-8" />,
+      title: "Conferences & Retreats",
+      description: "Professional insights at conferences, retreats, or community events.",
+      bg: "bg-[#966639] text-white",
+    },
+    {
+      icon: <Users className="mx-auto h-8 w-8" />,
+      title: "Workshops",
+      description: "Interactive faith-based financial workshops for groups & teams.",
+      bg: "bg-[#c5a468] text-white",
+    },
+  ];
 
   return (
     <div className="bg-[#e5e2d6] text-[#000000] min-h-screen py-12 px-4 flex flex-col items-center">
@@ -19,42 +45,47 @@ function Speaking() {
         </p>
       </section>
 
-      {/* Image Gallery */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 max-w-6xl">
+      {/* Responsive Image + Card Pairing */}
+      <div className="block sm:hidden w-full max-w-xl">
+        {images.map((src, idx) => (
+          <div key={idx} className="mb-8">
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <img
+                src={src}
+                alt={`Speaking event ${idx + 1}`}
+                className="w-full h-64 object-cover object-top"
+              />
+            </div>
+            <div className={`mt-4 p-6 rounded-lg shadow-md text-center font-[Cinzel] ${cards[idx].bg}`}>
+              {cards[idx].icon}
+              <h4 className="text-xl font-semibold mt-4 mb-2">{cards[idx].title}</h4>
+              <p>{cards[idx].description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Desktop Grid Layout */}
+      <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 max-w-6xl">
         {images.map((src, idx) => (
           <div key={idx} className="overflow-hidden rounded-lg shadow-lg group">
             <img
               src={src}
               alt={`Speaking event ${idx + 1}`}
               className="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-105"
-
             />
           </div>
         ))}
       </div>
 
-      {/* Speaking Topics */}
-      <div className="grid sm:grid-cols-2 gap-8 max-w-5xl mb-16 font-[Cinzel]">
-        <div className="bg-[#f1d782] p-6 rounded-lg shadow-md text-center">
-          <Mic className="mx-auto h-8 w-8 text-[#000000]" />
-          <h4 className="text-xl font-semibold mt-4 mb-2">Keynote Addresses</h4>
-          <p>Custom messages on legacy, leadership, and financial empowerment.</p>
-        </div>
-        <div className="bg-[#c5a468] p-6 rounded-lg shadow-md text-center text-white">
-          <Users className="mx-auto h-8 w-8" />
-          <h4 className="text-xl font-semibold mt-4 mb-2">Workshops</h4>
-          <p>Interactive faith-based financial workshops for groups & teams.</p>
-        </div>
-        <div className="bg-[#966639] p-6 rounded-lg shadow-md text-center text-white">
-          <CalendarDays className="mx-auto h-8 w-8" />
-          <h4 className="text-xl font-semibold mt-4 mb-2">Conferences & Retreats</h4>
-          <p>Professional insights at conferences, retreats, or community events.</p>
-        </div>
-        <div className="bg-[#000000] p-6 rounded-lg shadow-md text-center text-white">
-          <Sparkles className="mx-auto h-8 w-8 text-[#f1d782]" />
-          <h4 className="text-xl font-semibold mt-4 mb-2">Custom Engagements</h4>
-          <p>We tailor sessions to meet your audience’s unique needs and goals.</p>
-        </div>
+      <div className="hidden sm:grid sm:grid-cols-2 gap-8 max-w-5xl mb-16 font-[Cinzel]">
+        {cards.map((card, idx) => (
+          <div key={idx} className={`${card.bg} p-6 rounded-lg shadow-md text-center`}>
+            {card.icon}
+            <h4 className="text-xl font-semibold mt-4 mb-2">{card.title}</h4>
+            <p>{card.description}</p>
+          </div>
+        ))}
       </div>
 
       {/* Contact CTA */}

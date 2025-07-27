@@ -14,7 +14,7 @@ const newReviews = JSON.parse(localStorage.getItem('newReviews')) || [];
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-earth-light text-earth-dark">
+      <div className="flex flex-col min-h-screen bg-earth-green text-earth-dark">
         <Navbar />
         <main className="flex-grow">
           <Routes>
