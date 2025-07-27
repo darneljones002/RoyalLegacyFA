@@ -4,7 +4,7 @@ import speaking2 from '../assets/slide4.jpg';
 import speaking3 from '../assets/slide3.jpg';
 import speaking4 from '../assets/group.jpg';
 
-function Speaking() {
+function Appearances() {
   const images = [speaking1, speaking2, speaking3, speaking4];
   const cards = [
     {
@@ -106,4 +106,4 @@ function Speaking() {
   );
 }
 
-export default Speaking;
+export default Appearances;

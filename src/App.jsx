@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Appointments from './pages/Appointments';
-import Speaking from './pages/Speaking';
+import Appearances from './pages/Appearances';
 import Reviews from './pages/Reviews';
 import ReviewClosed from './pages/ReviewClosed';
 
@@ -22,7 +22,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/appointments" element={<Appointments />} />
-            <Route path="/speaking" element={<Speaking />} />
+            <Route path="/appearances" element={<Appearances />} />
             <Route path="/reviews" element={newReviews.length >= 40 ? <ReviewClosed /> : <Reviews />} />
           </Routes>
         </main>

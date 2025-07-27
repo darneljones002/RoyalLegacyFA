@@ -32,7 +32,7 @@ function Navbar() {
         </button>
 
         <div className="hidden md:flex space-x-6 font-bold font-[Cinzel]">
-          {['/', '/about', '/services', '/appointments', '/speaking'].map((path, idx) => {
+          {['/', '/about', '/services', '/appointments', '/appearances'].map((path, idx) => {
             const labels = ['Home', 'About', 'Services', 'Consultation', 'Appearances'];
             return (
               <Link
