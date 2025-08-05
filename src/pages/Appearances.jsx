@@ -3,6 +3,7 @@ import speaking1 from '../assets/speaking-retreat.jpg';
 import speaking2 from '../assets/slide4.jpg';
 import speaking3 from '../assets/slide3.jpg';
 import speaking4 from '../assets/group.jpg';
+import { Link } from 'react-router-dom';
 
 function Appearances() {
   const images = [speaking1, speaking2, speaking3, speaking4];
@@ -88,19 +89,19 @@ function Appearances() {
         ))}
       </div>
 
-      {/* Contact CTA */}
+      {/* Booking CTA */}
       <section className="text-center font-[Cinzel]">
         <p className="text-lg mb-4">
           For bookings and availability, please email us at:
           <br />
           <strong className="text-[#966639]">speaking@royallegacyfa.com</strong>
         </p>
-        <a
-          href="mailto:speaking@royallegacyfa.com"
+        <Link
+          to="/appearances-form"
           className="inline-block bg-[#966639] hover:bg-[#c5a468] text-white font-bold py-3 px-6 rounded-full transition duration-300"
         >
-          Request Booking
-        </a>
+          Request an Appearance
+        </Link>
       </section>
     </div>
   );

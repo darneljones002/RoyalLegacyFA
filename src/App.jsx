@@ -8,6 +8,7 @@ import Appointments from './pages/Appointments';
 import Appearances from './pages/Appearances';
 import Reviews from './pages/Reviews';
 import ReviewClosed from './pages/ReviewClosed';
+import AppearanceScheduler from './pages/AppearanceScheduler'
 
 const newReviews = JSON.parse(localStorage.getItem('newReviews')) || [];
 
@@ -19,11 +20,14 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/reviews" element={newReviews.length >= 40 ? <ReviewClosed /> : <Reviews />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/appointments" element={<Appointments />} />
             <Route path="/appearances" element={<Appearances />} />
-            <Route path="/reviews" element={newReviews.length >= 40 ? <ReviewClosed /> : <Reviews />} />
+           <Route path="/appearances-form" element={<AppearanceScheduler />} />
+
+           
           </Routes>
         </main>
         <Footer />
