@@ -50,7 +50,7 @@ function Navbar() {
 
       {isOpen && (
         <div className="md:hidden bg-earth-light px-4 py-2 space-y-2">
-          {['/', '/about', '/services', '/appointments', '/speaking'].map((path, idx) => {
+          {['/', '/about', '/services', '/appointments', '/appearances'].map((path, idx) => {
             const labels = ['Home', 'About Me', 'Services', 'Consultation', 'Appearances'];
             return (
               <Link
