@@ -11,6 +11,8 @@ function Navbar() {
           <span className="hidden md:inline">Royal Legacy Financial Advisors</span>
           <span className="inline md:hidden">Royal Legacy Financial Advisors</span>
         </h1>
+
+        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-earth-clay focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
@@ -31,6 +33,7 @@ function Navbar() {
           </svg>
         </button>
 
+        {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 font-bold font-[Cinzel]">
           {['/', '/about', '/services', '/appointments', '/appearances'].map((path, idx) => {
             const labels = ['Home', 'About', 'Services', 'Consultation', 'Appearances'];
@@ -45,9 +48,21 @@ function Navbar() {
               </Link>
             );
           })}
+
+          {/* External Link - More + */}
+          <a
+            href="https://monittawilliams.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative group transition duration-300"
+          >
+            <span className="group-hover:text-earth-clay transition-colors duration-300">More +</span>
+            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-earth-clay transition-all duration-300 group-hover:w-full"></span>
+          </a>
         </div>
       </div>
 
+      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-earth-light px-4 py-2 space-y-2">
           {['/', '/about', '/services', '/appointments', '/appearances'].map((path, idx) => {
@@ -63,6 +78,17 @@ function Navbar() {
               </Link>
             );
           })}
+
+          {/* External Link - More + (Mobile) */}
+          <a
+            href="https://monittawilliams.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
+            className="block transition duration-300 hover:text-earth-clay"
+          >
+            More +
+          </a>
         </div>
       )}
     </nav>
