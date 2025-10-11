@@ -5,6 +5,8 @@
     <link rel="icon" href="%PUBLIC_URL%/RLFA.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap"
       rel="stylesheet"
@@ -14,39 +16,82 @@
       rel="stylesheet"
     />
 
+    <!-- Primary Meta Tags -->
+    <title>Royal Legacy Financial Advisors</title>
+    <meta
+      name="title"
+      content="Royal Legacy Financial Advisors | Creating, Building, Shifting Legacy"
+    />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Creating, Building, Shifting Legacy — with Dr. Monitta Williams, Lead Advisor at Royal Legacy Financial Advisors. Faith-based financial guidance for individuals and small businesses."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/RLFA.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Royal Legacy Financial Advisors</title>
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://royallegacyfa.com/" />
+    <meta
+      property="og:title"
+      content="Royal Legacy Financial Advisors | Creating, Building, Shifting Legacy"
+    />
+    <meta
+      property="og:description"
+      content="Faith-based financial planning and business advising with Dr. Monitta Williams — building lasting legacies for families and entrepreneurs."
+    />
+    <meta property="og:image" content="https://royallegacyfa.com/RLFA.png" />
+    <meta property="og:site_name" content="Royal Legacy Financial Advisors" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://royallegacyfa.com/" />
+    <meta
+      name="twitter:title"
+      content="Royal Legacy Financial Advisors | Creating, Building, Shifting Legacy"
+    />
+    <meta
+      name="twitter:description"
+      content="Faith-based financial planning and business advising with Dr. Monitta Williams — building lasting legacies for families and entrepreneurs."
+    />
+    <meta name="twitter:image" content="https://royallegacyfa.com/RLFA.png" />
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/RLFA.png" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Schema Markup for Google -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FinancialService",
+        "name": "Royal Legacy Financial Advisors",
+        "image": "https://royallegacyfa.com/RLFA.png",
+        "@id": "https://royallegacyfa.com",
+        "url": "https://royallegacyfa.com",
+        "logo": "https://royallegacyfa.com/RLFA.png",
+        "description": "Faith-based financial advising for individuals and small businesses. Led by Dr. Monitta Williams — Creating, Building, Shifting Legacy.",
+        "founder": {
+          "@type": "Person",
+          "name": "Dr. Monitta Williams",
+          "jobTitle": "Lead Advisor"
+        },
+        "sameAs": [
+          "https://linkedin.com/in/royallegacyfa/",
+          "https://instagram.com/royallegacyfa/",
+          "https://facebook.com/royallegacyfa"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "United States"
+        },
+        "slogan": "Creating, Building, Shifting Legacy"
+      }
+    </script>
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
