@@ -90,7 +90,7 @@ function About() {
             />
             <PlayCircle
               size={64}
-              className="absolute inset-0 m-auto text-[#000000] drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
+              className="absolute inset-0 m-auto text-[#f1d782] drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
             />
           </div>
 
@@ -106,7 +106,7 @@ function About() {
             />
             <PlayCircle
               size={64}
-              className="absolute inset-0 m-auto text-[#000000] drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
+              className="absolute inset-0 m-auto text-[#f1d782] drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
             />
           </div>
         </div>
