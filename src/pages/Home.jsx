@@ -4,7 +4,7 @@ import ImageCarousel from '../components/ImageCarousel';
 import slide1 from '../assets/award.jpg';
 import slide2 from '../assets/agent.jpg';
 import slide3 from '../assets/slide2-3.jpeg';
-import slide4 from '../assets/Dr.Monitta_photo.jpg';
+import slide4 from '../assets/Dr.Monitta_photo.png';
 
 
 function Home() {
