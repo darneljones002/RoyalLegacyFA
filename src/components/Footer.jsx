@@ -34,7 +34,7 @@ function Footer() {
       </div>
 
       <p className="text-sm">
-        &copy; {new Date().getFullYear()} Royal Legacy Financial Advisors. All rights reserved.
+        &copy; {new Date().getFullYear()} Royal Legacy Financial Advisors. Created by Render Forge Inc.
       </p>
     </footer>
   );
